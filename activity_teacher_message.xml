@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_teacher_messages"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFFCFCFC"
+    tools:context=".TeacherFiles.TeacherMessageActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_messages"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingBottom="8dp"
+        android:clipToPadding="false" />
+
+    <EditText
+        android:id="@+id/et_reply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type your reply here"
+        android:padding="12dp"
+        android:background="@android:color/transparent"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:inputType="textMultiLine"
+        android:minLines="1"
+        android:maxLines="4"
+        android:gravity="top|start" />
+
+    <Button
+        android:id="@+id/btn_send_reply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Reply"
+        android:layout_marginTop="8dp"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#3F51B5"
+        android:padding="12dp" />
+</LinearLayout>

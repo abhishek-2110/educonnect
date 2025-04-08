@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/vecorise_wallpaper_of_books_building_laptop_and_ki"
+    tools:context=".HomeFiles.HomeActivity">
+
+    <!-- 🔹 College Title -->
+    <TextView
+        android:id="@+id/tv_college_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="College Name"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true" />
+
+    <!-- 🔹 Description -->
+    <TextView
+        android:id="@+id/tv_college_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Communication App"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/tv_college_name"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true" />
+
+    <!-- 🔹 Visit Website Button -->
+    <Button
+        android:id="@+id/btnVisitWebsite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Visit Website"
+        android:textSize="16sp"
+        android:backgroundTint="#59E6A897"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/tv_college_description"
+        android:layout_marginTop="14dp"
+        android:layout_centerHorizontal="true" />
+
+    <!-- 🔹 Total Users Count -->
+    <TextView
+        android:id="@+id/txtTotalUsers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Registered Users: 0"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#089D0C"
+        android:layout_below="@id/btnVisitWebsite"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true" />
+
+    <!-- 🔹 Student Count -->
+    <TextView
+        android:id="@+id/txtStudents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Students: 0"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_below="@id/txtTotalUsers"
+        android:layout_marginTop="6dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/black" />
+
+    <!-- 🔹 Teacher Count -->
+    <TextView
+        android:id="@+id/txtTeachers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Teachers: 0"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_below="@id/txtStudents"
+        android:layout_marginTop="6dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/black" />
+
+    <!-- 🔹 Parent Count -->
+    <TextView
+        android:id="@+id/txtParents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Parents: 0"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_below="@id/txtTeachers"
+        android:layout_marginTop="6dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/black" />
+
+    <!-- 🔹 Go to Login Button -->
+    <Button
+        android:id="@+id/btnGoToLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go to Login"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#020835"
+        android:layout_below="@id/txtParents"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

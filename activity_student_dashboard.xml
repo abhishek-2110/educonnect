@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFF8FF">
+
+    <!-- ✅ Include the reusable toolbar at the top -->
+    <include layout="@layout/toolbar_dashboard" />
+
+    <!-- Main content container with padding -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student Dashboard"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textColor="#4A148C" />
+
+        <Button
+            android:id="@+id/btn_view_assignments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Assignments"
+            android:backgroundTint="#7E57C2"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="16dp"/>
+
+        <Button
+            android:id="@+id/btn_view_homework"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Homework" />
+
+        <Button
+            android:id="@+id/btn_view_announcements"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Announcements"
+            android:backgroundTint="#7E57C2"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="8dp"/>
+
+        <Button
+            android:id="@+id/btn_contact_teacher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contact Teacher"
+            android:backgroundTint="#7E57C2"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="8dp"/>
+
+        <Button
+            android:id="@+id/btn_view_attendance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Attendance"
+            android:backgroundTint="#FF9800"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="8dp"/>
+
+        <!-- ✅ Navigation Buttons -->
+        <include layout="@layout/back_forward_navigation" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <!-- 🔹 Toolbar at the top -->
+    <include layout="@layout/toolbar_dashboard" />
+
+    <!-- 🔹 Content inside nested LinearLayout for padding -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_dashboard_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Parent Dashboard"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp"
+            android:textColor="#333" />
+
+        <Button
+            android:id="@+id/btn_view_attendance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Attendance"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="#6A1B9A"
+            android:textColor="#FFF" />
+
+        <Button
+            android:id="@+id/btn_view_homework"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Homework"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="#6A1B9A"
+            android:textColor="#FFF" />
+
+        <Button
+            android:id="@+id/btn_child_progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Child's Progress"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="#6A1B9A"
+            android:textColor="#FFF" />
+
+
+
+        <Button
+            android:id="@+id/btn_message_teacher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Message Teacher"
+            android:layout_marginBottom="24dp"
+            android:backgroundTint="#6A1B9A"
+            android:textColor="#FFF" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="← Back"
+                android:layout_marginEnd="16dp"
+                android:backgroundTint="#BDBDBD"
+                android:textColor="#000" />
+
+            <Button
+                android:id="@+id/btnForward"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next →"
+                android:backgroundTint="#0288D1"
+                android:textColor="#FFF" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

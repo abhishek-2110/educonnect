@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <TextView
+        android:id="@+id/txt_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student Name"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/txt_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID: "
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/txt_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email: "
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/txt_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone: "
+        android:textSize="14sp"/>
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_present"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Present"/>
+
+        <RadioButton
+            android:id="@+id/radio_absent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Absent"/>
+
+        <RadioButton
+            android:id="@+id/radio_late"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Late"/>
+    </RadioGroup>
+
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <!-- Student Name -->
+    <TextView
+        android:id="@+id/tv_student_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Student Name"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:paddingBottom="4dp"/>
+
+    <!-- Student ID -->
+    <TextView
+        android:id="@+id/tv_student_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ID: STU001"
+        android:textSize="14sp"
+        android:paddingBottom="2dp"/>
+
+    <!-- Student Email -->
+    <TextView
+        android:id="@+id/tv_student_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email: student@email.com"
+        android:textSize="14sp"
+        android:paddingBottom="8dp"/>
+
+    <!-- Homework Input -->
+    <EditText
+        android:id="@+id/et_homework"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter homework for this student"
+        android:background="@android:drawable/edit_text"
+        android:padding="8dp"/>
+
+    <!-- Divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="12dp"/>
+
+</LinearLayout>

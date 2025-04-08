@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/tv_from_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="From ID"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Message"
+        android:textColor="#333333"
+        android:layout_marginTop="4dp"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_reply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reply"
+        android:textColor="#3F51B5"
+        android:layout_marginTop="4dp"
+        android:textSize="14sp" />
+
+</LinearLayout>

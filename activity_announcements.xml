@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Announcements"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- Input Field for Teachers to Write Announcements -->
+    <EditText
+        android:id="@+id/et_announcement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Write an announcement"
+        android:visibility="gone" />
+
+    <!-- Button for Teachers to Post Announcement -->
+    <Button
+        android:id="@+id/btn_post_announcement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Post Announcement"
+        android:visibility="gone"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- List of Announcements -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_announcements"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- ✅ Back/Next Navigation Buttons -->
+    <include layout="@layout/back_forward_navigation" />
+
+</LinearLayout>
